@@ -2,4 +2,4 @@ streamlit
 langchain
 langchain_experimental
 openai
-matplotlib
+matplotlib==3.4.3

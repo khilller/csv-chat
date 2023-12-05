@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain.agents.agent_types import AgentType
 from langchain_experimental.agents.agent_toolkits import create_csv_agent
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import pandas as pd
 import re
 import os
@@ -102,7 +102,7 @@ def main():
                 try:
                     #display_content_from_json(json.loads(response))
                     #making df available for execution in the context
-                    exec(code_to_execute, globals(), {"df": df, "plt": plt})
+                    exec(code_to_execute, globals(), {"df": df})
                     #fig = plt.show() #get the current figure
                     st.pyplot() #display the figure using streamlit
                 except Exception as e:

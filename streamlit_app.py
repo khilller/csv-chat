@@ -16,7 +16,7 @@ openai_key = os.getenv("OPENAI_KEY")
 
 def main():
 
-    load_dotenv()
+    #load_dotenv()
 
     model_4 = 'gpt-4-1106-preview'
     model_3 = 'gpt-3.5-turbo-1106'

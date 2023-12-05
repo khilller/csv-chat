@@ -4,3 +4,4 @@ langchain_experimental
 openai
 matplotlib==3.4.3
 python-dotenv
+tabulate

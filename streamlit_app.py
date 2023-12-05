@@ -24,7 +24,7 @@ def main():
 
     def csv_agent_func(file_path, user_question):
         """ Run the CSV agent witht the given file path and user message."""
-        llm = ChatOpenAI(temperature=0, model=model_3, openai_api_key=openai_key)
+        llm = ChatOpenAI(temperature=0, model=model_4, openai_api_key=openai_key)
         agent = create_csv_agent(llm, file_path, verbose=True, agent_type=AgentType.OPENAI_FUNCTIONS)
 
         try:

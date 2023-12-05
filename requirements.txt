@@ -3,3 +3,4 @@ langchain
 langchain_experimental
 openai
 matplotlib==3.4.3
+dotenv

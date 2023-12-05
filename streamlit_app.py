@@ -21,10 +21,11 @@ def main():
 
     model_4 = 'gpt-4-1106-preview'
     model_3 = 'gpt-3.5-turbo-1106'
+    model_3_5 = 'gpt-3.5-turbo-instruct-0914'
 
     def csv_agent_func(file_path, user_question):
         """ Run the CSV agent witht the given file path and user message."""
-        llm = ChatOpenAI(temperature=0, model=model_4, openai_api_key=openai_key)
+        llm = ChatOpenAI(temperature=0, model=model_3_5, openai_api_key=openai_key)
         agent = create_csv_agent(llm, file_path, verbose=True, agent_type=AgentType.OPENAI_FUNCTIONS)
 
         try:

@@ -12,7 +12,8 @@ from langchain.llms import OpenAI
 from dotenv import load_dotenv
 import warnings
 
-openai_key = os.getenv("OPENAI_KEY")
+#openai_key = os.getenv("OPENAI_KEY")
+openai_key = st.secrets("OPENAI_API_KEY")
 
 def main():
 
